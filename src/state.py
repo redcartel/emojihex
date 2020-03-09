@@ -1,3 +1,5 @@
+import os
+
 STATE = {
     "window_x": 0,
     "window_y": 0,
@@ -15,6 +17,7 @@ def move_param(pname, y, x, mode="abs"):
     else:
         raise ValueError("mode must be abs or rel")
 
+
 def get_param(pname):
     return STATE[pname]
 
@@ -27,7 +30,5 @@ def set_param(pname, value, mode="abs"):
         raise ValueError("mode must be abs or rel")
 
 MAP = [[]]
-
-HIGHLIGHTS = {}
 
 ENTITIES = {}
